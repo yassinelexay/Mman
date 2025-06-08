@@ -1,0 +1,86 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>login</title>
+
+<style>
+
+body{
+background: linear-gradient(to bottom, #ff2530, red);
+background-repeat: no-repeat;
+background-attachment: fixed;
+margin: 20px;
+
+}
+
+#myform{
+color: gold;
+}
+
+#ii{
+background-color: #4000ff;
+}
+
+</style>
+
+</head>
+
+<body>
+<form id="myform" method="post">
+
+<fieldset id="ii">
+
+<legend>login</legend>
+
+
+<div>
+<label for="txt">username</label>
+<input id="txt" type="text" required placeholder="ex:Mario" name="user">
+</div>
+
+<br>
+
+<div>
+
+<label for="age">age</label>
+<input id="age" type="number" min="0" max="999" required>
+</div>
+
+<br>
+
+<div>
+<label for="email">email</label>
+<input id="email" type="email" required placeholder="mario@nintendo.com">
+</div>
+
+<br>
+<div>
+<label for="pass">password</label>
+<input id="pass" type="password" required placeholder="ex:mario12#4" name="password">
+</div>
+<br>
+
+<div>
+<input type="submit" value="finish!">
+</div>
+</fieldset>
+
+<script>
+
+document.getElementById("myform").addEventListener("submit", function(e){
+
+e.preventDefault();
+  
+  window.location.href = "character.html";
+});
+
+</script>
+
+</form>
+</body>
+</html>
